@@ -32,9 +32,9 @@ list_immut = []
 
 for key, value in this_dict.items():
     if type(value) in (list, dict, set):
-        list_mut.append(key)
+        list_mut.append(value)
     else:
-        list_immut.append(key)
+        list_immut.append(value)
 
 sorted_variables = {
     "mutable": list_mut,
